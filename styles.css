@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+
+    /* Premium matte gradient */
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,255,255,0.08), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.06), transparent 40%),
+        linear-gradient(135deg, #c94b7c, #6a3093);
+
+    background-attachment: fixed;
+}
+
+/* Center containers */
+.container, .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Text */
+.title {
+    font-size: 2.2rem;
+    max-width: 90%;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+}
+
+/* Cat gif */
+.cat {
+    width: 180px;
+    margin: 15px 0;
+}
+
+/* Buttons area */
+.button-area {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+/* Buttons */
+button {
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#yes {
+    font-size: 26px;
+    padding: 15px 45px;
+    background-color: #ff2e63;
+    color: white;
+}
+
+#no {
+    font-size: 14px;
+    padding: 6px 12px;
+    background-color: #444;
+    color: white;
+    position: absolute;
+}
+
+/* Hidden sections */
+.hidden {
+    display: none;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.6rem;
+    }
+
+    #yes {
+        font-size: 20px;
+        padding: 12px 30px;
+    }
+}
